@@ -1,0 +1,158 @@
+/* CSS Document */
+
+#main:hover
+{
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:18px;
+font-style:oblique; border-radius:20px;
+}
+#main
+{
+text-align:center;
+
+margin-top:60px;
+width:80%;
+border-collapse:separate;
+border:solid; border-color:#FF00FF;
+height:630px;
+border: 1px solid black thin;
+transition-duration:1s;
+}
+#top
+{
+height:50px;
+background-color:#0099CC;
+opacity:0.5;
+filter: alpha(opacity=50);
+}
+li{ list-style-type:none; margin:0; padding:0; display:inline;}
+#top:hover{ opacity:0.9; transition-duration:1s;}
+#bottom
+{
+height:10px;
+background-color:#0099CC; opacity:0.5;
+}
+#middle
+{
+height:400px;
+width:80%;
+}
+@keyframes sides {
+    from { opacity:0.1;}
+    to { opacity:1;}
+}
+.sides
+{
+width:100px;
+background-color:#FF99FF; opacity:0.9;
+animation-name:sides;
+animation-duration:10s;
+animation-iteration-count:infinite;
+}
+#menus
+{
+text-align:center;
+margin-top:20px;
+margin-left:80px;
+margin-right:80px;
+color:#666666;
+
+}
+#menus:hover
+{
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:24px;
+background-position:top;
+border-spacing:10px;
+border-left:solid;
+caption-side:top; transition-duration:3s;
+}
+@keyframes example {
+    from { font-size:14px;}
+    to { font-size:18px;}
+}
+#login
+{
+text-align:right;
+margin-right:30px;
+animation-name:example;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+a
+{
+text-decoration:none;
+font-stretch:expanded;
+color:#FFFFFF;
+padding:8px;
+} 
+.link:hover
+{
+border-bottom:dashed;
+height:50px;
+
+}
+input[type=text]
+{
+font-family:"Times New Roman", Times, serif;
+font-size:14px;
+font-style:italic;
+
+}
+input[type=text]:hover
+{ border:groove; color:#339966;
+border-radius:6px; transition-duration:1s; width:150px;}
+input[type=password]:hover
+{border:groove; color:#339966;
+border-radius:6px; 
+transition-duration:1s;}
+input[type=password]
+{
+font-family:"Times New Roman", Times, serif;
+font-size:14px;
+font-style:italic;
+
+}
+input[type=submit]
+{
+background-color:#CCFFFF;
+font-size:24px;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-style:italic;
+transition-duration:2s;
+
+
+}
+input[type=submit]:hover
+{
+background-color:#0099FF;
+border-radius:12px;
+
+}
+input[type=reset]
+{
+background-color:#CCFFFF;
+font-size:24px;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-style:italic;
+transition-duration:2s;
+
+
+}
+input[type=reset]:hover
+{
+background-color:#0099FF;
+border-radius:12px;
+
+}
+@keyframes anim{
+from{ vertical-align:top; color:#990000; font-size:9px; text-decoration:line-through; transition-duration:6s;}
+to{vertical-align:middle; color:#000099; font-size:30px; font-family:Arial, Helvetica, sans-serif; text-decoration:none;}
+}
+#left
+{
+color:#990099;
+animation-name:anim;
+animation-iteration-count:infinite; animation-duration:10s;
+}
+

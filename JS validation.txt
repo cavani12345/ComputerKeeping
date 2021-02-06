@@ -1,0 +1,27 @@
+make sure all fields to validate have IDs: name as id, email and password as id
+<form on submit="return validate();">
+<input type="text" id="name">
+<input type="email" id="email">
+<input type="password" id="password">
+</form>
+<script>
+function validate()
+{
+var name=document.getElementById('name').value;
+var email=document.getElementById('email').value;
+var pass=document.getElementById('password').value
+if(name=='' || email=='' || pass=='')
+{
+alert('all fields are required');
+return false;
+}
+else if(pass.length<6)
+{
+alert('password must be at least 6 characters');
+password.focus();
+}
+else
+{
+return true;
+}
+} 
